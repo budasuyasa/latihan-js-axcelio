@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        #p2 {
+            color: blue;
+        }
+
+        .p3 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+
+        <p>Halo, ini adalah paragraph</p>
+
+        <p id="p2"></p>
+
+        <p class="p3"></p>
+        <p class="p3"></p>
+
+        <button id="rubah-teks" onclick="rubahteks()">Ubah Text</button>
+
+    </div>
+    
+    <script type="text/javascript">
+
+        var divUtama = document.querySelector("div")
+        // divUtama.innerHTML = "Teks ini akan menggantikan isi div"
+        var p2 = document.querySelector("#p2") 
+
+        var p3 = document.querySelector(".p3")
+
+        p2.innerHTML = "Paragraph ke dua"
+
+        p3.innerHTML = "Ini adalah paragraph ke tiga"
+
+        function rubahteks(){
+            p2.style.display = "none"
+            p3.innerHTML = "Teks sudah dirubah"
+        }
+
+
+    </script>
+    
+</body>
+</html>

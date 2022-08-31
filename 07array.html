@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul id="daftar_hobi">
+    </ul>
+
+    <script type="text/javascript">
+        //            0              1        2          3            4
+        var hobi = ["main bola", "ngegames", "nyanyi", "ngoding", "berenang"]
+        var bil_prima = [1, 2, 3, 5, 7]
+        console.log(hobi)
+        console.log(hobi[3])
+        console.log(bil_prima[1])
+
+        var daftar_hobi = document.querySelector("#daftar_hobi")
+
+        // for(var i=0; i < hobi.length ; i = i + 1){
+        //     var item = document.createElement("li")
+        //     // <li></li>
+        //     item.innerHTML = hobi[i]
+        //     // <li>nyanyi</li>
+        //     daftar_hobi.append(item)
+        // }
+
+        hobi.push("mencuci")
+        console.log(hobi)
+        hobi.pop("mencuci")
+        console.log(hobi)
+        
+        hobi.forEach((item) => {
+             var li = document.createElement("li")
+             // <li></li>
+             li.innerHTML = item
+             // <li>nyanyi</li>
+             daftar_hobi.append(li)
+        })
+
+
+
+
+
+    </script>
+</body>
+</html>

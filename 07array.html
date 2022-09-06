@@ -21,26 +21,26 @@
 
         var daftar_hobi = document.querySelector("#daftar_hobi")
 
-        // for(var i=0; i < hobi.length ; i = i + 1){
-        //     var item = document.createElement("li")
-        //     // <li></li>
-        //     item.innerHTML = hobi[i]
-        //     // <li>nyanyi</li>
-        //     daftar_hobi.append(item)
-        // }
+        for(var i=0; i < hobi.length ; i = i + 1){
+            var item = document.createElement("li")
+            // <li></li>
+            item.innerHTML = hobi[i]
+            // <li>nyanyi</li>
+            daftar_hobi.append(item)
+        }
 
         hobi.push("mencuci")
         console.log(hobi)
         hobi.pop("mencuci")
         console.log(hobi)
         
-        hobi.forEach((item) => {
-             var li = document.createElement("li")
-             // <li></li>
-             li.innerHTML = item
-             // <li>nyanyi</li>
-             daftar_hobi.append(li)
-        })
+        // hobi.forEach((item) => {
+        //      var li = document.createElement("li")
+        //      // <li></li>
+        //      li.innerHTML = item
+        //      // <li>nyanyi</li>
+        //      daftar_hobi.append(li)
+        // })
 
 
 
